@@ -1,15 +1,24 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers;
+// use App\Http\Controllers;
 use App\Http\Controllers\HelloWorldController;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\CourseController;
-use App\Http\Controllers\MainController;
+use App\Http\Controllers\IndexController;
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes
+| Archivo Web
+|--------------------------------------------------------------------------
+|
+|  Aqui es donde tú puedes registar las rutas web para tu aplicacion. 
+|  Esas rutas son cargadas por el RouteServiceProvider(Proveedor de servicio de rutas), 
+|  y todo sera asignado a el web middleware(archivo web que actua 
+|  como cuello de botella en las request). 
+|  Has algo genial!
+|
+|--------------------------------------------------------------------------
+| Web Routes 
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
@@ -19,18 +28,17 @@ use App\Http\Controllers\MainController;
 */
 
 
-
 // Route::get('/', MainController::class)->name('main');
 Route::get('/hello-world', HelloWorldController::class)->name('hello-world'); //* test
 Route::get('/login', LoginController::class)->name('login');
 
-Route::controller(MainController::class)->group(function()
+
+Route::controller(IndexController::class)->group(function()
 {
-    Route::get('/', '__invoke')->name('main');
-    Route::get('/action/create', 'create')->name('action.create');
-    Route::post('/action/create', 'store')->name('action.store');
-    Route::get('/action/{action}', 'show')->name('action.show');
-    Route::get('/action/{action}/edit', 'edit')->name('action.edit');
-    Route::put('/action/{action}', 'update')->name('action.update');
+    Route::get('/', 'index')->name('index'); // pagina central
 });
+
+include_once('links/actaEntrega.php');
+include_once('links/cargo.php');
+
 

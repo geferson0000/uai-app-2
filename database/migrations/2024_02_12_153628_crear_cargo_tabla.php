@@ -7,28 +7,27 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration
 {
     /**
-     * Run the migrations.
+     * correr la migracion.
      */
     public function up(): void
     {
-        Schema::create('actions', function(Blueprint $table)
+        Schema::create('cargo', function(Blueprint $table) // tabla que guarda los diferentes tipos de cargo
         {
             $table->id();
-            $table->string('target');
-            $table->date('started_at');
-            $table->date('ended_at');
+            $table->string('nombre');
+
+            // ------ fecha en que se agrega una fila y se modifica ------
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent();
-            $table->unsignedBigInteger('type_audits_id');
-            $table->foreign('type_audits_id')->references('id')->on('type_audits');   
         });
     }
 
     /**
-     * Reverse the migrations.
+     * revertir la migracion.
      */
     public function down(): void
     {
-        Schema::drop('actions');
+        Schema::drop('cargo');
+        //
     }
 };

@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use \App\Models\ActuacionFiscal;
 
 class DatabaseSeeder extends Seeder
 {
@@ -18,8 +19,12 @@ class DatabaseSeeder extends Seeder
             //     'email' => 'test@example.com',
             // ]);
         // $this->call(ActionSeeder::class);
-        $this->call(JobTitleSeeder::class);
-        $this->call(TypeAuditSeeder::class);
-        \App\Models\Action::factory(100)->create();
+        $this->call(CargoSeeder::class);
+        $this->call(TipoAuditoriaSeeder::class);
+
+
+        // utilizando la factory para crear x numero de filas
+        $filas = 20;
+        ActuacionFiscal::factory($filas)->create();
     }
 }

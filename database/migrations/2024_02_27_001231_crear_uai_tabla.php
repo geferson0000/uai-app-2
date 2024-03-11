@@ -7,24 +7,27 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration
 {
     /**
-     * Run the migrations.
+     * correr la migracion.
      */
     public function up(): void
     {
-        Schema::create('type_audits', function (Blueprint $table) {
-            $table->id();
-            $table->string('code', 10);
-            $table->string('name', 50);
+        Schema::create('uai', function(Blueprint $table) // tabla que guarda los departamentos de la UAI
+        {
+            $table->id('id');
+            $table->string('nombre');
+            $table->integer('nivel');
+
+            // ------ fecha en que se agrega una fila y se modifica ------
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent();
         });
     }
 
     /**
-     * Reverse the migrations.
+     * revertir la migracion.
      */
     public function down(): void
     {
-        //
+        Schema::drop('uai');
     }
 };
