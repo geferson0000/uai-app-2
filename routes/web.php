@@ -4,8 +4,9 @@ use App\Http\Controllers\acta;
 use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers;
 use App\Http\Controllers\HelloWorldController;
-use App\Http\Controllers\LoginController;
+use App\Http\Controllers\SignController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,23 +29,25 @@ use App\Http\Controllers\IndexController;
 |
 */
 
-
-// Route::get('/', MainController::class)->name('main');
 Route::get('/hello-world', HelloWorldController::class)->name('hello-world'); //* test
-Route::get('/login', LoginController::class)->name('login');
 
-
-Route::controller(IndexController::class)->group(function()
-{
-    Route::get('/', 'index')->name('index'); // pagina central
+Route::middleware('auth')->group(function () {
+    // Route::get('/profile', function () {
+    //     // ...
+    // })->withoutMiddleware([EnsureTokenIsValid::class]);
+    
+    Route::controller(IndexController::class)->group(function()
+    {
+        Route::get("/", 'index')->name('index');
+    });
+ 
+    Route::controller(SignController::class)->group(function()
+    {
+        Route::get('/iniciar-sesion', 'login')->name('sign.login')->withoutMiddleware('auth'); 
+        Route::get('/cerrar-sesion', 'logout')->name('sign.logout'); 
+        Route::post('/iniciar-sesion/autenticar', 'authenticate')->name('sign.login.authenticate')->withoutMiddleware('auth'); 
+        
+        Route::get('/registrar-usuario', 'register')->name('sign.register')->withoutMiddleware('auth'); 
+    });
+    Route::post('/registrar-usuario/almacenar', [UserController::class, 'store'])->name('sign.register.store')->withoutMiddleware('auth');
 });
-
-Route::controller(acta::class)->group(function()
-{
-    Route::get('/acta', 'index')->name('acta'); // pagina central
-});
-
-include_once('links/actaEntrega.php');
-include_once('links/cargo.php');
-
-

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>@yield('title')</title>
   {{-- styles --}}
 
@@ -35,8 +36,11 @@
       <i id="btn_open">
         <img src="/images/almuadilla.svg" alt="" srcset=""></i>
     </div>
-    <br>
-    <br>
+    @auth
+        
+    <p>{{auth()->user()->name ?? auth()->user()->username}}</p>
+    @endauth
+    <a href="{{ route('sign.logout') }}">cerrar sesion</a>
     <div class="conteiner">
       <img class="img" src="/images/Cantv.png">
     </div>

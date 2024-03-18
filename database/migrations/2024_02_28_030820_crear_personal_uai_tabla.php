@@ -14,23 +14,26 @@ return new class extends Migration
         Schema::create('personal_uai', function(Blueprint $table) // tabla que guarda el personal de la uai
         {
             $table->id();
-            $table->string('primer_nombre');
-            $table->string('segundo_nombre')->nullable();
-            $table->string('primer_apellido');
-            $table->string('segundo_apellido')->nullable();
-            $table->string('gmail')->nullable();
-            $table->string('email_cantv')->nullable();
-            $table->string('telefono')->nullable();
-            $table->binary('foto_perfil')->nullable();
-            $table->integer('P00')->unique();
-            $table->integer('cedula')->unique();
+            $table->string('email');
+            $table->string('password');
             
-            // ------ relaciones ------
-            $table->unsignedBigInteger('cargo_id');
-            $table->foreign('cargo_id')->references('id')->on('cargo');
+            // $table->string('primer_nombre');
+            // $table->string('segundo_nombre')->nullable();
+            // $table->string('primer_apellido');
+            // $table->string('segundo_apellido')->nullable();
+            // $table->string('gmail')->nullable();
+            // $table->string('email_cantv')->nullable();
+            // $table->string('telefono')->nullable();
+            // $table->binary('foto_perfil')->nullable();
+            // $table->integer('p00')->unique();
+            // $table->integer('cedula')->unique();
             
-            $table->unsignedBigInteger('uai_id'); // adscripcion a la coordinacion | gerencia | despacho, de la uai
-            $table->foreign('uai_id')->references('id')->on('uai');
+            // // ------ relaciones ------
+            // $table->unsignedBigInteger('cargo_id');
+            // $table->foreign('cargo_id')->references('id')->on('cargo');
+            
+            // $table->unsignedBigInteger('uai_id'); // adscripcion a la coordinacion | gerencia | despacho, de la uai
+            // $table->foreign('uai_id')->references('id')->on('uai');
 
             // ------ fecha en que se agrega una fila y se modifica ------
             $table->timestamp('created_at')->useCurrent();

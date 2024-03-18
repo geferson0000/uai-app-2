@@ -2,18 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\PersonalUai;
 use Illuminate\Http\Request;
 
 class PersonalUaiController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
-    {
-        //
-    }
-
     /**
      * Show the form for creating a new resource.
      */
@@ -27,7 +20,7 @@ class PersonalUaiController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        PersonalUai::create($request->all());
     }
 
     /**

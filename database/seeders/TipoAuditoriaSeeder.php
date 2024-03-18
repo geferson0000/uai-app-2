@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\TipoAditoria;
+use App\Models\TipoAuditoria;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -30,7 +30,7 @@ class TipoAuditoriaSeeder extends Seeder
 
         foreach($tipoAuditoria as $tipo)
         {
-            $tipoAuditoria = new TipoAditoria();
+            $tipoAuditoria = new TipoAuditoria();
             $tipoAuditoria->nombre = $tipo['nombre'];
             $tipoAuditoria->codigo = $tipo['codigo'];
             $tipoAuditoria->save();
