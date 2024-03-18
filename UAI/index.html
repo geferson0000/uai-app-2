@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html class="bg-white" lang="es">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UAI</title> 
+
+
+
+
+
+<!-- Bootstrap-->
+<link rel="stylesheet" href="./css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+<!-- DataTable -->
+<link rel="stylesheet" href="./css/dataTables.bootstrap5.min.css" />
+<!-- Font Awesome -->
+<link
+    rel="stylesheet"
+    href="./css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+/>
+<!-- Custom CSS -->
+<link rel="stylesheet" href="./css/styles.css" />
+
+<link rel="icon" href="img/logo-removebg-preview.ico" type="image/png">
+<link rel="stylesheet" href="./css/estilos.css" />
+</head>
+
+
+
+
+
+
+
+<body id="body">
+   
+<header>
+  
+<div class="icon__menu">
+<i id="btn_open" >
+    <img src="./almuadilla.svg" alt="" srcset=""></i>     
+</div>
+<br>
+<br>
+<div class="conteiner">
+    <img class="img" src="./Cantv.png" >
+
+  
+   </div> 
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+        
+<div class="name__page">
+            
+<i class="fab fa-youtube"></i>
+            
+<h4>Unidad de Auditoria Interna </h4>
+        
+</div>
+
+        
+<div class="options__menu">	
+
+            
+<nav id="ArielPlaza_s">
+                
+<ul class="lista ocultar">
+<br>
+<br>
+<br>
+
+<li><a href=""><i class="fas fa-home" title="Portafolio"></i>    Inicio</a>
+                        
+<ul style="--cantidad-items: 4">
+                           
+                        
+</ul>
+                    
+</li>
+                    
+<li><a href="carga_datos.html"><i class="far fa-file" title="Portafolio"></i>    Carga de data </a>
+                        
+<ul style="--cantidad-items: 4">
+                           
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="far fa-file" title="Portafolio"></i>    Personal UAI</a>
+                        <ul style="--cantidad-items: 4">
+                        </ul>
+                    </li>
+                    
+                    
+                    <li><a href="index.html"><i class="far fa-file" title="Portafolio"></i>     Acta</a>
+                        <ul style="--cantidad-items: 4">
+                            <li><a href="Ver_Acta.html">Ver Acta </a></li>
+                            <li><a href="Modificar.html">Modificar</a></li>
+                            <li><a href="Informe">Informe</a></li>
+                            <li><a href="Subir_informe.html">Subir informe </a></li>
+                        </ul>
+                    </li>
+      
+                    <!--<li><a href="#">  <i class="far fa-file" title="Portafolio"></i>      Item </a>
+                        <ul style="--cantidad-items: 4">
+                            <li><a href="#">SubItem 1</a></li>
+                            <li><a href="#">SubItem 2</a></li>
+                            <li><a href="#">SubItem 3</a></li>
+                            <li><a href="#">SubItem 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">  <i class="far fa-file" title="Portafolio"></i>     Item </a>
+                        <ul style="--cantidad-items: 4">  
+                            <li><a href="#">SubItem 1</a></li>
+                            <li><a href="#">SubItem 2</a></li>
+                            <li><a href="#">SubItem 3</a></li>
+                            <li><a href="#">SubItem 4</a></li>
+                        </ul>
+                    </li>
+                -->
+                </ul>
+        </div>
+    </div>
+
+    <main >
+        <div class="container my-4 bg-white">
+            <div class="row ">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <table id="datatable_users"  class="hover" style="width:100%">
+                        <caption>Acta de Entrega</caption>
+                        <thead>
+                            <tr>
+                                <th class="centered">#</th>
+                                <th class="centered">Name</th>
+                                <th class="centered">Email</th>
+                                <th class="centered">City</th>
+                                <th class="centered">Company</th>
+                                <th class="centered">Status</th>
+                                <th class="centered">Options</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody_users"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<script src="script.js"></script>
+
+ <!-- Bootstrap-->
+ <script src="./js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+ <!-- jQuery -->
+ <script src="./js/jquery.min.js"></script>
+ <!-- DataTable -->
+ <script src="./js/jquery.dataTables.min.js"></script>
+ <script src="./js/dataTables.bootstrap5.min.js"></script>
+ <!-- Custom JS -->
+ <script src="main.js"></script>
+</body>
+</html>

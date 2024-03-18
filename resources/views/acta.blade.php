@@ -3,7 +3,7 @@
 @section('title', 'UAI')
 
 @section('content')
-<h1>soy index</h1>
+<h1>soy acta</h1>
 <form action="{{ route('cargo.guardar') }}" method="post">
 @csrf
 <input style="margin-top: 20vh" type="text" name="nombre">

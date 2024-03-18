@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\acta;
 use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers;
 use App\Http\Controllers\HelloWorldController;
@@ -36,6 +37,11 @@ Route::get('/login', LoginController::class)->name('login');
 Route::controller(IndexController::class)->group(function()
 {
     Route::get('/', 'index')->name('index'); // pagina central
+});
+
+Route::controller(acta::class)->group(function()
+{
+    Route::get('/acta', 'index')->name('acta'); // pagina central
 });
 
 include_once('links/actaEntrega.php');
