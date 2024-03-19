@@ -17,8 +17,8 @@ return new class extends Migration
             // $table->date('gestion_inicio');
             // $table->date('gestion_fin'); //
             
-            $table->date('suscripcion'); // fecha de suscripcion
-            $table->date('recepcion_uai'); // fecha de recepcion por parte de la uai
+            $table->date('suscripcion')->nullable(); // fecha de suscripcion
+            $table->date('recepcion_uai')->nullable(); // fecha de recepcion por parte de la uai
 
             // ------ relaciones ------
             $table->unsignedBigInteger('actuaciones_fiscales_id');
@@ -33,7 +33,7 @@ return new class extends Migration
             $table->unsignedBigInteger('personal_recibe_id'); // la relacion con la persona que recibe
             $table->foreign('personal_recibe_id')->references('id')->on('personal_recibe');
 
-            $table->unsignedBigInteger('personal_uai_id'); // la relacion con la unidad de auditoria interna
+            $table->unsignedBigInteger('personal_uai_id')->nullable(); // la relacion con la unidad de auditoria interna
             $table->foreign('personal_uai_id')->references('id')->on('personal_uai');
             
             // ------ fecha en que se agrega una fila y se modifica ------

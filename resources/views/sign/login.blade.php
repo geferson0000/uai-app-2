@@ -95,6 +95,9 @@
                                 </div>
                             </div>
                         </form>
+                        <a href="{{route('sign.register')}}">
+                            <button class="btn btn-primary">Registrarse</button>
+                        </a>
                     </div>
                 </div>
             </div>

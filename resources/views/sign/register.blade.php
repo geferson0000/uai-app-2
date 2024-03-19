@@ -103,6 +103,9 @@
                             </div>
                         </div>
                     </form>
+                    <a href="{{route('sign.login')}}">
+                        <button class="btn btn-primary">iniciar sesion</button>
+                    </a>
                 </div>
             </div>
         </div>

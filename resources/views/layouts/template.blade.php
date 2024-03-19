@@ -38,9 +38,11 @@
     </div>
     @auth
         
-    <p>{{auth()->user()->name ?? auth()->user()->username}}</p>
+    <p style="color: white">{{auth()->user()->name ?? auth()->user()->username}}</p>
     @endauth
-    <a href="{{ route('sign.logout') }}">cerrar sesion</a>
+    <a href="{{ route('sign.logout') }}">
+      <button style="color:white; background-color: #e92715" class="btn">cerrar sesion</button>
+    </a>
     <div class="conteiner">
       <img class="img" src="/images/Cantv.png">
     </div>

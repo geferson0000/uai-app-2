@@ -17,9 +17,12 @@ class CargoSeeder extends Seeder
         $nombres = 
         [
             'administrador de soporte', 
-            'auditor I', 'auditor II', 
-            'lider', 'especialista', 
-            'consultor', 'coordinador', 
+            'auditor I',
+            'auditor II', 
+            'lider', 
+            'especialista', 
+            'consultor', 
+            'coordinador', 
             'gerente'
         ];
 

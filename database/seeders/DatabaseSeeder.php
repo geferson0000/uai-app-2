@@ -21,7 +21,8 @@ class DatabaseSeeder extends Seeder
         // $this->call(ActionSeeder::class);
         $this->call(CargoSeeder::class);
         $this->call(TipoAuditoriaSeeder::class);
-
+        $this->call(UaiSeeder::class);
+        $this->call(PersonalUaiSeeder::class);
 
         // utilizando la factory para crear x numero de filas
         $filas = 20;
