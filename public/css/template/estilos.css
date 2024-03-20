@@ -1,6 +1,33 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap'); */
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"); */
 
+.perfil {
+    text-align: center;
+    padding-left: 25px;
+    padding-top: 25px;
+}
 
+.perfil img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.perfil-figure {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-header-2 {
+    background-image: url("/public/images/template/fondo-cantv.jpg");
+    background-size: cover;
+    color: #fff;
+}
+
+.modal-footer-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 nav ul {
     margin: 0;
@@ -16,7 +43,6 @@ nav ul li {
 nav ul a {
     box-sizing: border-box;
     color: rgb(0, 0, 0);
-
     display: table;
     width: 100%;
     padding: 6px 10px;
@@ -29,6 +55,7 @@ nav ul ul {
     transition: 0.5s;
     counter-reset: items;
 }
+
 nav ul ul li {
     counter-increment: items;
 }
@@ -51,32 +78,59 @@ nav ul ul a {
 }
 
 body {
-    margin-top: 80px;
     transition: 0.5s;
 }
 
 main {
-    margin-top: 20vh !important;
+    margin-top: 8vh !important;
     margin-left: 10vw;
     margin-right: 10vw;
 }
 
 header {
+    display: flex;
+    flex-direction: row;
+    background: #0032a1;
+}
+
+.header-button {
+    flex-grow: 10;
     transition: 0.5s;
     justify-content: space-between;
-    width: 100%;
     height: 80px;
-    background: #0032a1;
     display: flex;
     align-items: flex-end;
-    position: fixed;
     top: 0;
     z-index: 200;
     align-items: center;
+    padding-right: 1vw;
+    padding-bottom: 0.75vw;
+    padding-top: 0.75vw;
+    border-radius: 0px 10px 10px 0px;
 }
 
-header > .conteiner {
-    margin-right: 1vw;
+.header-button-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logoRepublica {
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    width: 300px;
+    right: 20px;
+}
+
+.header-button-logos-cantv {
+    flex-grow: 10;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header>.conteiner {
+    margin-right: 1svw;
 }
 
 .img {
@@ -113,7 +167,8 @@ header > .conteiner {
 .menu__side {
     width: 0px;
     height: 100%;
-    background-image: url("/images/fondo.png");
+    background-image: url("/images/template/fondo-cantv.jpg");
+    background-size: cover;
     position: fixed;
     top: 0;
     left: 0;
@@ -125,12 +180,16 @@ header > .conteiner {
     transition: 0.5s;
 }
 
+
 /*Ocultar scroll para chrome, safari y opera*/
+
 .menu__side::-webkit-scrollbar {
     display: none;
 }
 
+
 /*Ocultar scroll para IE, Edge y Firefox*/
+
 .menu__side {
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -150,7 +209,6 @@ header > .conteiner {
 
 .options__menu {
     padding: 20px 30px;
-    position: absolute;
     top: 80px;
 }
 
@@ -198,16 +256,11 @@ a.selected {
     left: -30px;
 }
 
+
 /*Clases para usar en JavaScript*/
 
-.toggle-header {
-    width: 83%;
-    margin: 0px;
-    transition: 0.5s;
-}
-
 .body_move {
-    margin-left: 250px;
+    margin-left: 240px;
 }
 
 .menu__side_move {
@@ -218,7 +271,6 @@ a.selected {
     .body_move {
         margin-left: 0px;
     }
-
     .menu__side_move {
         width: 80px;
         left: 10px;

@@ -12,21 +12,14 @@
   {{-- para pasar los arhivos css y js a la carpeta resource tienes que tener instalado vite js --}}
 
   {{-- links styles --}}
-  <link rel="stylesheet" href="/css/app.css" />
-  <link rel="stylesheet" href="/css/styles.css" />
-  <link rel="stylesheet" href="/css/estilos.css" />
-  <link rel="stylesheet" href="/css/all.min.css" />
+  <link rel="stylesheet" href="/css/registo/registro.css"  />
 
   {{-- links bootstrap --}}
   <link rel="stylesheet" href="/css/bootstrap.min.css"  />
-  <link rel="stylesheet" href="/css/dataTables.bootstrap5.min.css" />
 
   {{-- links logo --}}
   <link rel="icon" href="/images/logos.png" type="image/png">
   <link rel="icon" href="/images/logo-removebg-preview.ico" type="image/png">
-
-
-
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">

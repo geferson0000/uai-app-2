@@ -12,14 +12,10 @@
   {{-- para pasar los arhivos css y js a la carpeta resource tienes que tener instalado vite js --}}
 
   {{-- links styles --}}
-  <link rel="stylesheet" href="/css/app.css" />
-  <link rel="stylesheet" href="/css/styles.css" />
-  <link rel="stylesheet" href="/css/estilos.css" />
-  <link rel="stylesheet" href="/css/all.min.css" />
-
+  <link rel="stylesheet" href="/css/login/login.css" />
   {{-- links bootstrap --}}
   <link rel="stylesheet" href="/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="/css/dataTables.bootstrap5.min.css" />
+
 
   {{-- links logo --}}
   <link rel="icon" href="/images/logos.png" type="image/png">
@@ -27,41 +23,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Documents</title>
 
 </head>
-
-<style>
-  body>section {
-    background-image: url('https://cantvuaiproyectosap.000webhostapp.com/img/fondo.png');
-  }
-
-  #div1 {
-    border-radius: 2rem;
-  }
-
-  #div2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column
-  }
-
-  #button3 {
-    margin-top: 2vh;
-    width: 10vw;
-    display: flex;
-    justify-content: center;
-  }
-
-  form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-</style>
 
 <body>
   <section class="vh-100">
@@ -119,7 +83,7 @@
                   </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary" style="background-color: red">
+                <button type="submit" class="btn btn-primary" style="background-color: #13b">
                   {{ __('Iniciar Sesión') }}
                 </button>
 
@@ -132,7 +96,7 @@
               </form>
 
               <button id="button3" class="btn btn-primary">
-                <a href="{{ route('sign.register') }}">{{ __('Registr') }}</a>
+                <a href="{{ route('sign.register') }}">{{ __('Registro') }}</a>
               </button>
 
             </div>
