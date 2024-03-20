@@ -119,7 +119,7 @@
                   </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary" style="background-color: #13b">
+                <button type="submit" class="btn btn-primary" style="background-color: red">
                   {{ __('Iniciar Sesión') }}
                 </button>
 
