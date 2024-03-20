@@ -43,7 +43,7 @@
   #div2 {
     display: flex;
     justify-content: center;
-    align-items: center;t
+    align-items: center;
     flex-direction: column
   }
 
@@ -132,7 +132,7 @@
               </form>
 
               <button id="button3" class="btn btn-primary">
-                <a href="{{ route('sign.register') }}">{{ __('Registro') }}</a>
+                <a href="{{ route('sign.register') }}">{{ __('Registr') }}</a>
               </button>
 
             </div>
