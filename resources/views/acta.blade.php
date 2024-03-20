@@ -11,6 +11,7 @@
 <input style="margin-top: 20vh" type="text" name="nombre">
 <input type="submit" value="enviar">
 <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
 </form>
   
 @endsection
