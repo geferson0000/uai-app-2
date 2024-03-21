@@ -3,8 +3,6 @@
 @section('title', 'UI')
 
 @section('content')
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
 
 
   <button
@@ -124,13 +122,15 @@
               </caption>
               <thead>
                 <tr>
-                  <th class="centered">#</th>
-                  <th class="centered">Name</th>
-                  <th class="centered">Email</th>
-                  <th class="centered">City</th>
-                  <th class="centered">Company</th>
-                  <th class="centered">Status</th>
-                  <th class="centered">Options</th>
+            
+                  <th class="centered">Codigo de acreditacion </th>
+                  <th class="centered">Descricion</th>
+                  <th class="centered">Fecha de inicio</th>
+                  <th class="centered">Fecha fin </th>
+                  <th class="centered">Tipo de atuoria </th>
+                  <th class="centered">Tipo de atuacion </th>
+                  <th class="centered">Nombre del saliente </th>
+                  <th class="centered">Nombre del entrante</th>
                 </tr>
               </thead>
               <tbody id="tableBody_users"></tbody>
@@ -138,5 +138,4 @@
           </div>
         </div>
       </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 @endsection
