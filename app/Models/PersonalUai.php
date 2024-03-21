@@ -25,4 +25,9 @@ class PersonalUai extends Model
         'cargo_id',
         'uai_id'
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

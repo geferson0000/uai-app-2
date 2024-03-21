@@ -14,10 +14,15 @@ class ActaEntrega extends Model
     protected $fillable = [
         'suscripcion',
         'recepcion_uai',
-        'actuaciones_fiscales_id',
+        'actuacion_fiscal_id',
         'unidades_id',
         'personal_entrega_id',
         'personal_recibe_id',
         'personal_uai_id'
     ];
+
+    public function actuacionFiscal()
+    {
+        return $this->belongsTo(ActuacionFiscal::class);
+    }
 }
