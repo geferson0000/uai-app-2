@@ -41,6 +41,8 @@ Route::middleware('auth')->group(function () {
         Route::get("/", 'index')->name('index');
     });
  
+    
+    // * routes to auth
     Route::controller(SignController::class)->group(function()
     {
         Route::get('/iniciar-sesion', 'login')->name('sign.login')->withoutMiddleware('auth'); 

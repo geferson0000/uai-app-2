@@ -9,7 +9,7 @@ class PersonalRecibe extends Model
 {
     use HasFactory;
 
-    protected $table = 'personal_recive';
+    protected $table = 'personal_recibe';
 
     protected $fillable = [
         'primer_nombre',
