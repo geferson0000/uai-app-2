@@ -12,4 +12,19 @@ class Cargo extends Model
     protected $table = 'cargo';
 
     protected $fillable = ['nombre'];
+
+    public function personalEntrega()
+    {
+        return $this->hasMany(PersonalEntrega::class);
+    }
+
+    public function personalRecibe()
+    {
+        return $this->hasMany(PersonalRecibe::class);
+    }
+
+    public function personalUai()
+    {
+        return $this->hasMany(PersonalUai::class);
+    }
 }

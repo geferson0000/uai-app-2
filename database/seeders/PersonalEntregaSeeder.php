@@ -37,7 +37,7 @@ class PersonalEntregaSeeder extends Seeder
                 'telefono' => '04242295529',
                 'p00' => '156373',
                 'cedula' => '12345678',
-                'cargo_id' => 2
+                'cargo_id' => 1
             ]
         ];
 

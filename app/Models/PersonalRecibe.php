@@ -23,4 +23,9 @@ class PersonalRecibe extends Model
         'cedula',
         'cargo_id'
     ];
+    
+    public function cargo()
+    {
+        return $this->belongsTo(Cargo::class);
+    }
 }
