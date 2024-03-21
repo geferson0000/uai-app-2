@@ -23,4 +23,9 @@ class IndexController extends Controller
 
         return view('index', $data);
     }
+
+    public function actaUsers()
+    {
+        return json_encode(User::all());
+    }
 }

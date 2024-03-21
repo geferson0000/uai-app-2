@@ -79,16 +79,9 @@
     <script type="module" src="/js/bootstrap/bootstrap.js"></script>
     <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
 
-    <!-- jQuery -->
-    <script src="/js/jquery-dataTables/jquery.min.js"></script>
-
-    <!-- DataTable -->
-    <script src="/js/jquery-dataTables/jquery.dataTables.min.js"></script>
-    <script src="/js/jquery-dataTables/dataTables.bootstrap5.min.js"></script>
 
     <!-- Custom JS -->
-    <script src="/js/script.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="/js/template/script.js"></script>
 </body>
 
 </html>

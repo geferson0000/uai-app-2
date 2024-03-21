@@ -39,6 +39,7 @@ Route::middleware('auth')->group(function () {
     Route::controller(IndexController::class)->group(function()
     {
         Route::get("/", 'index')->name('index');
+        Route::get("/index/acta/users", 'actaUsers')->name('index.acta.users');
     });
  
     
