@@ -1,0 +1,28 @@
+body>section {
+    background-image: url("https://cantvuaiproyectosap.000webhostapp.com/img/fondo.png");
+}
+
+#div1 {
+    border-radius: 2rem;
+}
+
+#div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#button3 {
+    margin-top: 2vh;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
