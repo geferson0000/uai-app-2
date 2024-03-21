@@ -28,4 +28,9 @@ class PersonalRecibe extends Model
     {
         return $this->belongsTo(Cargo::class);
     }
+
+    public function actaEntrega()
+    {
+        return $this->hasMany(ActaEntrega::class);
+    }
 }

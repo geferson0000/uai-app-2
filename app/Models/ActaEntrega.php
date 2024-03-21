@@ -25,4 +25,19 @@ class ActaEntrega extends Model
     {
         return $this->belongsTo(ActuacionFiscal::class);
     }
+
+    public function personalEntrega()
+    {
+        return $this->belongsTo(PersonalEntrega::class);
+    }
+
+    public function personalRecibe()
+    {
+        return $this->belongsTo(PersonalRecibe::class);
+    }
+
+    public function personalRecibe()
+    {
+        return $this->belongsTo(PersonalRecibe::class);
+    }
 }
