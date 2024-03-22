@@ -44,7 +44,7 @@ Route::middleware('auth')->group(function () {
 
     Route::controller(PersonalUai::class)->group(function()
     {
-        Route::get("/personal/create", 'create')->name('personal.create'); // muestra la vista
+        Route::get("/personal/create", 'create')->name('personal.index'); // muestra la vista
         Route::get("/personal/show", 'show')->name('personal.show'); // muestra 
         Route::post("/personal/store", 'store')->name('personal.store'); // almacenar
         Route::put("/personal/edit/{id}", 'edit')->name('personal.edit'); // editar un usuario
