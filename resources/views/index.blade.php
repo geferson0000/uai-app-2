@@ -5,19 +5,19 @@
 <!-- Bootstrap-->
 @include('acta.modal')
 <div class="container my-4 bg-white">
-  <div class="row">
+    <div class="row">
       <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
                 Nueva Acta
             </button>
             <div id="datatable_users_wrapper" class="dataTables_wrapper dt-bootstrap5 no-footer">
                 <div class="col-sm-12">
-                  @include('acta.table')
+                    @include('acta.table')
                 </div>
             </div>
         </div>
     </div>
-
+    
 </div>
 <!-- Bootstrap-->
 <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
