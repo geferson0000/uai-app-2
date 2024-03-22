@@ -119,8 +119,10 @@ header {
     display: flex;
     justify-content: right;
     align-items: flex-start;
-    width: 300px;
-    right: 20px;
+}
+
+.header-logoRepublica>img {
+    width: 30vw;
 }
 
 .header-button-logos-cantv {
