@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/template/estilos.css" />
     <link rel="stylesheet" href="/css/all.min.css" />
-    
-    
+
+
     {{-- links bootstrap --}}
     <link href="/css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
@@ -59,13 +59,27 @@
                         <ul class="lista ocultar">
                             <li>
                                 <i title="Portafolio"></i>
-                                <img src="./img/casa.svg" alt="" srcset="" />Inicio
-                                {{-- </div>
-               <a href="{{ route('sign.logout') }}">
-                <button style="color:white; background-color: #e92715" class="btn">cerrar sesion</button>
-              </a> --}}
-                                <ul style="--cantidad-items: 4"></ul>
+                                <img src="./images/template/casa.svg" style="width:18%" srcset="" />Inicio  
                             </li>
+                            <i>
+                                <a href="index-usuario.blade.php">
+                                    <i title="Portafolio"></i>
+                                    <img src="./images/template/casa.svg" style="width:18%" srcset=""/>Personal UAI
+                                </a>
+                                </li>
+
+                            <li>
+                                <i title="Portafolio"></i>
+                                <img src="./images/template/casa.svg" style="width:18%" srcset="" />Informe
+                            </li>
+                            
+                          
+                            <a href="{{ route('sign.logout') }}">
+                                <button style="color:white; background-color: #006af5" class="btn">cerrar
+                                    sesion</button>
+                            </a>
+                            </li>
+                            <ul style="--cantidad-items: 4"></ul>
                         </ul>
                     </nav>
                 </div>

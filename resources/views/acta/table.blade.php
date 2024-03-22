@@ -1,6 +1,6 @@
 <style>
     .code {
-        color: red;
+        color: rgb(0, 0, 0);
         width: 50px;
     }
 
@@ -39,7 +39,7 @@ aria-describedby="datatable_users_info"
             style="width: 189px" 
             aria-label="Name: activate to sort column ascending"
             >
-                Unidad Entregada
+                Descrición de la Actuacion 
             </th>
             <th 
             class="centered sorting" 
@@ -50,7 +50,7 @@ aria-describedby="datatable_users_info"
             style="width: 166px" 
             aria-label="Company: activate to sort column ascending"
             >
-                Saliente
+                Fecha inicio 
             </th>
             <th 
             class="centered sorting_disabled" 
@@ -59,7 +59,7 @@ aria-describedby="datatable_users_info"
             style="width: 60px" 
             aria-label="Status"
             >
-                Entrante
+               Fecha fin
             </th>
             <th 
             class="centered sorting_disabled" 
@@ -67,9 +67,9 @@ aria-describedby="datatable_users_info"
             colspan="1" 
             style="width: 60px" 
             aria-label="Status"
-            >
-                Fecha Recepción
-            </th>
+            > Area UAI
+            
+            
         </tr>
     </thead>
     <tbody id="tableBody_users"></tbody>
