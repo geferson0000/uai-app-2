@@ -1,4 +1,5 @@
-@extends('layouts.template') @section('title', 'UI') 
+@extends('layouts.template')
+@section('title', 'UI')
 
 @section('content')
 <!-- Bootstrap-->

@@ -28,6 +28,9 @@ return new class extends Migration
             $table->unsignedBigInteger('cargo_id');
             $table->foreign('cargo_id')->references('id')->on('cargo');
 
+            $table->unsignedBigInteger('unidad_id');
+            $table->foreign('unidad_id')->references('id')->on('unidades');
+
             // ------ fecha en que se agrega una fila y se modifica ------
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent();

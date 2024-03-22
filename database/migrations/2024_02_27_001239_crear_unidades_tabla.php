@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('unidades', function(Blueprint $table) // tabla que guarda los diferentes tipos de auditoria
         {
-            $table->id('id');
+            $table->id();
             $table->string('nombre');
             $table->integer('nivel');
+
             // ------ fecha en que se agrega una fila y se modifica ------
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent();

@@ -17,4 +17,9 @@ class ActuacionFiscal extends Model
         'fin',
         'tipo_auditoria',
     ];
+
+    public function actaEntrega()
+    {
+        return $this->hasOne(ActaEntrega::class);
+    }
 }

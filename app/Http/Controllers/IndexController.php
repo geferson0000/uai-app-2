@@ -20,7 +20,7 @@ class IndexController extends Controller
             'outgoing' => PersonalRecibe::all(),
             'incoming' => PersonalEntrega::all(),
         ];
-
+        
         return view('index', $data);
     }
 

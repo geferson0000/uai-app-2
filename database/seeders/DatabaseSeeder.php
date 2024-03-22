@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
             // ]);
         // $this->call(ActionSeeder::class);
         $this->call(CargoSeeder::class);
+        $this->call(UserSeeder::class);
         $this->call(UnidadSeeder::class);
         $this->call(UaiSeeder::class);
         $this->call(PersonalUaiSeeder::class);

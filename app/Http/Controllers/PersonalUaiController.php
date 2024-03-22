@@ -12,7 +12,15 @@ class PersonalUaiController extends Controller
      */
     public function create()
     {
-        //
+        return view('personal.index');
+    }
+    
+    /**
+     * Display the specified resource.
+     */
+    public function show()
+    {
+        return json_encode(PersonalUai::all());
     }
 
     /**
@@ -24,19 +32,12 @@ class PersonalUaiController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
-    }
-
-    /**
      * Show the form for editing the specified resource.
      */
     public function edit(string $id)
     {
-        //
+        $pesonal = PersonalUai::find($id);
+        return $pesonal;
     }
 
     /**
@@ -52,6 +53,7 @@ class PersonalUaiController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $personal = PersonalUai::find($id);
+        $personal->delete();
     }
 }

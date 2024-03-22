@@ -26,7 +26,8 @@ class PersonalUaiSeeder extends Seeder
                 'gmail' => 'geferson.job@gmail.com', 
                 'email_cantv' => 'gmoren002@cantv.com.ve', 
                 'cargo_id' => 1, 
-                'uai_id' => 1, 
+                'uai_id' => 1,
+                'user_id' => 1, 
             ],[
                 'cedula' => '12345678', 
                 'primer_nombre' => 'pier', 
@@ -35,10 +36,11 @@ class PersonalUaiSeeder extends Seeder
                 'segundo_apellido' => 'diaz', 
                 'telefono' => '04242295529', 
                 'p00' => '156374', 
-                'gmail' => 'pier44444.job@gmail.com', 
+                'gmail' => 'pier44444@gmail.com', 
                 'email_cantv' => 'pbolec@cantv.com.ve', 
                 'cargo_id' => 1, 
                 'uai_id' => 1, 
+                'user_id' => 2, 
             ]
         ];
 
@@ -57,6 +59,7 @@ class PersonalUaiSeeder extends Seeder
             $personalUai->email_cantv = $personal['email_cantv'];
             $personalUai->cargo_id = $personal['cargo_id'];
             $personalUai->uai_id = $personal['uai_id'];
+            $personalUai->user_id = $personal['user_id'];
             $personalUai->save();
         }
     }
