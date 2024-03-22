@@ -21,12 +21,18 @@ class PersonalEntrega extends Model
         'telefono',
         'p00',
         'cedula',
-        'cargo_id'
+        'cargo_id',
+        'unidad_id',
     ];
 
     public function cargo()
     {
         return $this->belongsTo(Cargo::class);
+    }
+
+    public function unidad()
+    {
+        return $this->belongsTo(Unidad::class);
     }
 
     public function actaEntrega()

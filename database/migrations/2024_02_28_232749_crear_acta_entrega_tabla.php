@@ -24,9 +24,6 @@ return new class extends Migration
             $table->unsignedBigInteger('actuacion_fiscal_id');
             $table->foreign('actuacion_fiscal_id')->references('id')->on('actuaciones_fiscales');
             
-            $table->unsignedBigInteger('unidades_id'); // la relacion con los departametos/unidades 
-            $table->foreign('unidades_id')->references('id')->on('unidades');
-            
             $table->unsignedBigInteger('personal_entrega_id'); // la relacion con la persona que entrega
             $table->foreign('personal_entrega_id')->references('id')->on('personal_entrega');
             

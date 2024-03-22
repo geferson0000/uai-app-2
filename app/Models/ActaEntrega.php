@@ -15,7 +15,6 @@ class ActaEntrega extends Model
         'suscripcion',
         'recepcion_uai',
         'actuacion_fiscal_id',
-        'unidades_id',
         'personal_entrega_id',
         'personal_recibe_id',
         'personal_uai_id'
@@ -36,7 +35,7 @@ class ActaEntrega extends Model
         return $this->belongsTo(PersonalRecibe::class);
     }
 
-    public function personalRecibe()
+    public function personalUai()
     {
         return $this->belongsTo(PersonalRecibe::class);
     }

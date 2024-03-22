@@ -15,4 +15,9 @@ class Uai extends Model
         'nombre',
         'nivel'
     ];
+
+    public function PersonalUai()
+    {
+        $this->hasMany(PersonalUai::class);
+    }
 }

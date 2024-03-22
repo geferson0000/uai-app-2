@@ -24,7 +24,8 @@ class PersonalEntregaSeeder extends Seeder
                 'telefono' => '04125637548',
                 'p00' => '154976',
                 'cedula' => '23465345',
-                'cargo_id' => 1
+                'cargo_id' => 1,
+                'unidad_id' => 1,
             ],
 
             [
@@ -37,7 +38,8 @@ class PersonalEntregaSeeder extends Seeder
                 'telefono' => '04242295529',
                 'p00' => '156373',
                 'cedula' => '12345678',
-                'cargo_id' => 1
+                'cargo_id' => 1,
+                'unidad_id' => 1,
             ]
         ];
 
@@ -54,6 +56,7 @@ class PersonalEntregaSeeder extends Seeder
             $persona->p00 = $personal['p00'];
             $persona->cedula = $personal['cedula'];
             $persona->cargo_id = $personal['cargo_id'];
+            $persona->unidad_id = $personal['unidad_id'];
             $persona->save();
         }
     }

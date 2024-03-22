@@ -7,6 +7,7 @@ use App\Http\Controllers\HelloWorldController;
 use App\Http\Controllers\SignController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\UserController;
+use App\Models\PersonalUai;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,6 +40,15 @@ Route::middleware('auth')->group(function () {
     Route::controller(IndexController::class)->group(function()
     {
         Route::get("/", 'index')->name('index');
+    });
+
+    Route::controller(PersonalUai::class)->group(function()
+    {
+        Route::get("/personal/create", 'create')->name('personal.create'); // muestra la vista
+        Route::get("/personal/show", 'show')->name('personal.show'); // muestra 
+        Route::post("/personal/store", 'store')->name('personal.store'); // almacenar
+        Route::put("/personal/edit/{id}", 'edit')->name('personal.edit'); // editar un usuario
+        Route::delete("/personal/destroy/{id}", 'destroy')->name('personal.destroy'); // elimina un usuario
     });
  
     
