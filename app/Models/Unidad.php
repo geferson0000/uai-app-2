@@ -15,4 +15,9 @@ class Unidad extends Model
         'nombre',
         'nivel'
     ];
+
+    public function personalEntrega()
+    {
+        return $this->hasMany(PersonalEntrega::class);
+    }
 }

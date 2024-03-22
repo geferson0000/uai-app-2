@@ -25,4 +25,24 @@ class PersonalUai extends Model
         'cargo_id',
         'uai_id'
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function cargo()
+    {
+        return $this->belongsTo(Cargo::class);
+    }
+
+    public function uai()
+    {
+        return $this->belongsTo(Uai::class);
+    }
+
+    public function actaEntrega()
+    {
+        return $this->hasMany(ActaEntrega::class);
+    }
 }

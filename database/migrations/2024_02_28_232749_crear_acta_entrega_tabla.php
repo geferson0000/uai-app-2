@@ -21,11 +21,8 @@ return new class extends Migration
             $table->date('recepcion_uai')->nullable(); // fecha de recepcion por parte de la uai
 
             // ------ relaciones ------
-            $table->unsignedBigInteger('actuaciones_fiscales_id');
-            $table->foreign('actuaciones_fiscales_id')->references('id')->on('actuaciones_fiscales');
-            
-            $table->unsignedBigInteger('unidades_id'); // la relacion con los departametos/unidades 
-            $table->foreign('unidades_id')->references('id')->on('unidades');
+            $table->unsignedBigInteger('actuacion_fiscal_id');
+            $table->foreign('actuacion_fiscal_id')->references('id')->on('actuaciones_fiscales');
             
             $table->unsignedBigInteger('personal_entrega_id'); // la relacion con la persona que entrega
             $table->foreign('personal_entrega_id')->references('id')->on('personal_entrega');
